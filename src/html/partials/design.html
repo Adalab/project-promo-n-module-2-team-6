@@ -1,19 +1,25 @@
 <section class="design wrapper">
 
     <div class="design__dropdown">
-        <div><i class="far fa-object-ungroup"></i></div>
-        <h2>diseña</h2>
-        <div><i class="fas fa-chevron-up"></i></div>
+        <div class="design__dropdown--header">
+            <i class="far fa-object-ungroup design__dropdown--ungroup"></i>
+            <h2 class="design__dropdown--title">diseña</h2>
+        </div>
+        <div class="design__dropdown--chevron"><i class="fas fa-chevron-up"></i>
+        </div>
+
     </div>
 
     <form action="#" method="get">
         <h3>colores</h3>
-        <input type="radio" id="palette1" value="palette1" name="palette"><img src="./assets/images/palette1.png"
-            class="design__palette" alt="colour palette 1">
-        <input type="radio" id="palette2" value="palette2" name="palette"><img src="./assets/images/palette2.png"
-            class="design__palette" alt="colour palette 2">
-        <input type="radio" id="palette3" value="palette3" name="palette"><img src="./assets/images/palette3.png"
-            class="design__palette" alt="colour palette 3">
+        <div class="design__form">
+            <input type="radio" id="palette1" value="palette1" name="palette"><img src="./assets/images/palette1.png"
+                class="design__palette" alt="colour palette 1">
+            <input type="radio" id="palette2" value="palette2" name="palette"><img src="./assets/images/palette2.png"
+                class="design__palette" alt="colour palette 2">
+            <input type="radio" id="palette3" value="palette3" name="palette"><img src="./assets/images/palette3.png"
+                class="design__palette" alt="colour palette 3">
+        </div>
     </form>
 
 </section>

@@ -1,17 +1,36 @@
-
-
 .design {
     height: 224px;
     border: 2px solid orange;
+
+    &__dropdown {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        font-size: 18px;
+        color: $gunMetal;
+
+        &--header {
+            display: flex;
+        }
+        &--ungroup {
+            color: $orange;
+            margin-right: 10px;
+        }
+        &--title {
+            font-family: $bodyF;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__palette {
         width: 90px;
         height: 25px;
     }
-}
-
-.far {
-    font-size: 18px;
-    color: $orange;
 }
 
