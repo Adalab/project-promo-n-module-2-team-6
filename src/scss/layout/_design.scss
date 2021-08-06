@@ -1,0 +1,17 @@
+
+
+.design {
+    height: 224px;
+    border: 2px solid orange;
+
+    &__palette {
+        width: 90px;
+        height: 25px;
+    }
+}
+
+.far {
+    font-size: 18px;
+    color: $orange;
+}
+
