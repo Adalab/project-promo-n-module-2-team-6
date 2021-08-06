@@ -1,6 +1,6 @@
 .design {
     height: 224px;
-    border: 2px solid orange;
+    border-bottom: 1px solid $whiteTwo;
 
     &__dropdown {
         display: flex;
@@ -22,15 +22,36 @@
             text-transform: uppercase;
         }
     }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__palette {
-        width: 90px;
-        height: 25px;
-    }
 }
 
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    &__description {
+        margin-left: 19px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    &__palette {
+
+        &--item {
+           margin-bottom: 20px;
+           display: flex;
+           align-items: center;
+        
+        }
+        &--radio {
+            height: 17px;
+            width: 17px;
+        }
+
+        &--image {
+            width: 90px;
+            height: 25px;
+        }
+    }
+    
+}
