@@ -2,16 +2,19 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Grupo 6</title>
+        rel="stylesheet" />
+
+    <title>Awesome profile cards</title>
 </head>
 
 <body>
@@ -38,10 +41,40 @@
     <section>
         <nav>
             <!--DESING-->
-            <div>
-                diseña + icono + flecha
-                -formulario
-            </div>
+            <section class="design wrapper">
+
+                <div class="dropdown">
+                    <div class="dropdown__header">
+                        <i class="far fa-object-ungroup dropdown__ungroup"></i>
+                        <h2 class="dropdown__title">diseña</h2>
+                    </div>
+                    <div><i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+
+                <div class="design-form">
+                    <h3 class="design-form__description">colores</h3>
+                    <form action="#" method="get" class="design-form__palette">
+
+                        <div class="design-form__palette--item">
+                            <input type="radio" id="palette1" value="palette1" name="palette"
+                                class="design-form__palette--radio"><img src="./assets/images/palette1.png"
+                                class="design-form__palette--image" alt="colour palette 1">
+                        </div>
+                        <div class="design-form__palette--item">
+                            <input type="radio" id="palette2" value="palette2" name="palette"
+                                class="design-form__palette--radio"><img src="./assets/images/palette2.png"
+                                class="design-form__palette--image" alt="colour palette 2">
+                        </div>
+                        <div class="design-form__palette--item">
+                            <input type="radio" id="palette3" value="palette3" name="palette"
+                                class="design-form__palette--radio"><img src="./assets/images/palette3.png"
+                                class="design-form__palette--image" alt="colour palette 3">
+                        </div>
+                    </form>
+                </div>
+
+            </section>
             <!--END DESING-->
 
             <!--FILL-->
@@ -52,16 +85,35 @@
             <!--END FILL-->
 
             <!--SHARE-->
-            <div>
-                comparte + icono + flecha
-                1ºboton (icono+texto)
-                2º h3 + link + boton (icono+texto)
-            </div>
+            <section class="share wrapper">
+
+                <div class="dropdown">
+                    <div class="dropdown__header">
+                        <i class="far fa-object-ungroup dropdown__ungroup"></i>
+                        <h2 class="dropdown__title">comparte</h2>
+                    </div>
+                    <div><i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+
+                <div class="create">
+                    <button class="create__btn" name="create"><i class="far fa-address-card create__address"></i></i>crear
+                        tarjeta</button>
+                </div>
+
+
+                <section class="created">
+                    <h3 class="created__title">La tarjeta ha sido creada:</h3>
+                    <a href="#" class="created__url">https://awesome-profile-card.com?id=A456DF0001</a>
+                    <button class="created__btn"><a href="#" target="_blank" class="created__btn--text"><i
+                                class="fab fa-twitter created__btn--icon"></i>Compartir en Twitter</a></button>
+
+                </section>
+            </section>
             <!--SHARE-->
 
         </nav>
     </section>
-
 
     <!--END FORM-->
 
