@@ -1,0 +1,80 @@
+.fill {
+  &__dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    &--icon {
+      color: $orange;
+      display: flex;
+    }
+    &--title {
+      font-family: $bodyF;
+      font-weight: 600;
+      color: $gunMetal;
+      margin-left: 10px;
+    }
+    &--arrow {
+      color: $gunMetal;
+    }
+    /*arrow hidden 
+
+    &--hidden {
+      display: none;
+      color: $gunMetal;
+    }*/
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__addPic {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &--title {
+      padding-bottom: 7px;
+      font-family: $bodyF;
+      font-size: 14px;
+      color: $darkGreen;
+    }
+    &--button {
+      width: 140px;
+      height: 30px;
+      font-family: $bodyF;
+      font-size: 14px;
+      color: white;
+      background-color: $orange;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      border-radius: 3px;
+    }
+    &--pic {
+      border: solid 1px $hospitalGreen;
+      width: 30px;
+      height: 30px;
+      align-self: end;
+    }
+  }
+}
+
+label {
+  margin-bottom: 7px;
+  font-family: $bodyF;
+  font-size: 14px;
+  color: $darkGreen;
+}
+
+input {
+  height: 30px;
+  margin-bottom: 20px;
+  border: solid 1px $hospitalGreen;
+  ::placeholder,
+  ::-webkit-input-placeholder,
+  :-ms-input-placeholder {
+    margin-left: 20px;
+  }
+}
+.input_github {
+  margin-bottom: 30px;
+}
