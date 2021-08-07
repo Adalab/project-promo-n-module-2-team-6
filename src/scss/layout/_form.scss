@@ -60,7 +60,7 @@
 //SHARE FORM
 
 .share {
-    height: 144px;
+    height: 312px;
     padding-top: 10px;
     border-top: 1px solid $greyBorder;
 }
@@ -96,10 +96,12 @@
 }
 
 .created {
-display: flex;
-flex-direction: column;
-align-items: center;
-height: 167px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 136px;
+    border-bottom: 1px solid $greyBorder;
+
 
     &__title {
         margin-top: 20px;
@@ -108,21 +110,33 @@ height: 167px;
     }
     &__url {
         margin-top: 5px;
+        margin-left: -5px;
+        margin-right: -5px;
         font-size: 12px;
         font-weight: 600;
         color: $orange;
     }
 
     &__btn {
-    margin-top: 10px;
-       width: 181px;
-       height: 30px; 
-       border-radius: 3px;
-       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-       border: none;
-       background-color: $twitterBlue;
-       font-family: $bodyF;
-       font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 181px;
+        height: 30px;
+        border-radius: 3px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+        border: none;
+        background-color: $twitterBlue;
+        font-family: $bodyF;
+        font-size: 14px;
+        &--icon {
+            font-size: 18px;
+            margin-right: 9.5px;
+            color: $whiteTwo;
+        }
+        &--text {
+            color: $whiteTwo;
+        }
     }
-
 }
