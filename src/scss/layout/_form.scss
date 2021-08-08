@@ -1,4 +1,4 @@
-//HEADER -- THREE FORMS
+//HEADER -- FORMS
 
 .dropdown {
     display: flex;
@@ -18,7 +18,7 @@
         text-transform: uppercase;
     }
 }
-//END  -- HEADER FOR THE THREE FORMS
+//END  -- HEADER FORMS
 
 //DESIGN FORM
 
@@ -41,9 +41,10 @@
     }
     &__palette {
         &--item {
+            height: 25px;
             margin-bottom: 20px;
             display: flex;
-            align-items: center;
+            
         }
         &--radio {
             height: 17px;
@@ -114,7 +115,6 @@
         margin-left: -5px;
         margin-right: -5px;
         font-size: 12px;
-        font-weight: 600;
         color: $orange;
     }
 
