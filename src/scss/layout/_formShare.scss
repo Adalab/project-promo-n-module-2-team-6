@@ -30,8 +30,15 @@
   }
   &__addPic {
     margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    }
 
     &--title {
       padding-bottom: 7px;
@@ -53,7 +60,7 @@
       border: solid 1px $hospitalGreen;
       width: 30px;
       height: 30px;
-      align-self: end;
+      margin-left: 20px;
     }
   }
 }
