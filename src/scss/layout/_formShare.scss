@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    margin-top: 10px;
 
     &--icon {
       color: $orange;
@@ -53,7 +54,6 @@
       font-size: 14px;
       color: white;
       background-color: $orange;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
       border-radius: 3px;
     }
     &--pic {
