@@ -1,8 +1,11 @@
 .mediaqueries {
+    @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    }
 }
 .mediaqueries-form {
+    @include tablet {   
 order: -1;
-
+    }
 }
