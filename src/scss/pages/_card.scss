@@ -1,5 +1,6 @@
 .mediaqueries {
-    background-image: linear-gradient(to bottom, var($whiteFour), var($whiteTwo) 9%);
+    background: linear-gradient(to bottom, $whiteFour, $whiteTwo 9%);
+
     margin-bottom: 30px;
     @include tablet {
     display: grid;
