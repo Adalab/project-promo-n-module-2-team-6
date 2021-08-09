@@ -23,7 +23,6 @@
 //DESIGN FORM
 
 .design {
-    height: 224px;
     padding-top: 30px;
     border-bottom: 1px solid $greyBorder;
 }
@@ -33,6 +32,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 25px;
+   
 
     &__description {
         margin-left: 19px;

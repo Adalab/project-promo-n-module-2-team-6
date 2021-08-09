@@ -2,6 +2,7 @@
   &__dropdown {
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
     margin-bottom: 25px;
     margin-top: 10px;
 
@@ -18,12 +19,7 @@
     &--arrow {
       color: $gunMetal;
     }
-    /*arrow hidden 
-
-    &--hidden {
-      display: none;
-      color: $gunMetal;
-    }*/
+    
   }
   &__form {
     display: flex;
