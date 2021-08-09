@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    margin: 0 20px;
 
     &--icon {
       color: $orange;
@@ -36,14 +35,14 @@
 
     &--title {
       padding-bottom: 7px;
-      /* font-family: $bodyF; */
+      font-family: $bodyF;
       font-size: 14px;
       color: $darkGreen;
     }
     &--button {
       width: 140px;
       height: 30px;
-      /* font-family: $bodyF; */
+      font-family: $bodyF;
       font-size: 14px;
       color: white;
       background-color: $orange;
@@ -61,7 +60,7 @@
 
 label {
   margin-bottom: 7px;
-  /* font-family: $bodyF; */
+  font-family: $bodyF;
   font-size: 14px;
   color: $darkGreen;
 }
@@ -75,6 +74,10 @@ input {
   :-ms-input-placeholder {
     margin-left: 20px;
   }
+}
+
+input::placeholder {
+  margin-left: 20px;
 }
 .input_github {
   margin-bottom: 30px;
