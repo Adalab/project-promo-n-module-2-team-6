@@ -76,16 +76,9 @@ input {
   height: 30px;
   margin-bottom: 20px;
   border: solid 1px $hospitalGreen;
-  ::placeholder,
-  ::-webkit-input-placeholder,
-  :-ms-input-placeholder {
-    margin-left: 20px;
-  }
+  padding-left: 20px;
 }
 
-input::placeholder {
-  margin-left: 20px;
-}
 .input_github {
   margin-bottom: 30px;
 }
