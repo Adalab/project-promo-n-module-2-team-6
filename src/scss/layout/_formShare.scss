@@ -35,9 +35,9 @@
     justify-content: flex-start;
 
     &--item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
     }
 
     &--title {
@@ -72,11 +72,12 @@ label {
   color: $darkGreen;
 }
 
-input {
+.style_input {
   height: 30px;
   margin-bottom: 20px;
   border: solid 1px $hospitalGreen;
   padding-left: 20px;
+  font-family: $bodyF;
 }
 
 .input_github {
