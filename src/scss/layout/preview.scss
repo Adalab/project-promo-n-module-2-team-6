@@ -40,3 +40,19 @@
     }
   
 }
+.icons{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-bottom: 12px;
+  &--border{
+    height: 32px;
+    margin-right: 10px;
+    width: 32px;
+    border:solid green;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
