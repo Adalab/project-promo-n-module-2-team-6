@@ -1,15 +1,16 @@
 body {
-    font-family: $bodyF;
-    color: $gunMetal;
+  font-family: $bodyF;
+  color: $gunMetal;
+  min-height: 100%;
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 20px;
+  @include tablet {
+    margin: 0 40px;
   }
-  
-  .wrapper {
-    margin: 0 20px;
-    @include tablet {
-      margin: 0 40px;
-    }
-  }
-  .hidden {
-    display: none;
-  }
-  
+}
+.hidden {
+  display: none;
+}
