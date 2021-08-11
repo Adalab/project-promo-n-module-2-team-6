@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,114 +12,184 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
     <title>Awesome profile cards</title>
 </head>
 
 <body>
     <!--HEADER-->
-    <header>
-        imagen-logo
+    <header class="header">
+        <img class="logo-awesome-header" src="../assets/images/logo-awesome-profile-cards.svg" alt="">
     </header>
     <!--END HEADER-->
 
-    <!--HERO-->
-    <section>
-        boton + imagen + texto
-        <div>
-            <div class="rectángulo-lateral"></div>
-            <h2>titulo</h2>
-            <h3>subtitulo</h3>
-            imagen (div con background)
-            4* iconos (para el borde llevan div)
-        </div>
-    </section>
 
-    <!--END HERO-->
-    <!--FORM-->
-    <section>
-        <nav>
-            <!--DESING-->
-            <section class="design wrapper">
-
-                <div class="dropdown">
-                    <div class="dropdown__header">
-                        <i class="far fa-object-ungroup dropdown__ungroup"></i>
-                        <h2 class="dropdown__title">diseña</h2>
-                    </div>
-                    <div><i class="fas fa-chevron-up"></i>
-                    </div>
-                </div>
-
-                <div class="design-form">
-                    <h3 class="design-form__description">colores</h3>
-                    <form action="#" method="get" class="design-form__palette">
-
-                        <div class="design-form__palette--item">
-                            <input type="radio" id="palette1" value="palette1" name="palette"
-                                class="design-form__palette--radio"><img src="./assets/images/palette1.png"
-                                class="design-form__palette--image" alt="colour palette 1">
-                        </div>
-                        <div class="design-form__palette--item">
-                            <input type="radio" id="palette2" value="palette2" name="palette"
-                                class="design-form__palette--radio"><img src="./assets/images/palette2.png"
-                                class="design-form__palette--image" alt="colour palette 2">
-                        </div>
-                        <div class="design-form__palette--item">
-                            <input type="radio" id="palette3" value="palette3" name="palette"
-                                class="design-form__palette--radio"><img src="./assets/images/palette3.png"
-                                class="design-form__palette--image" alt="colour palette 3">
-                        </div>
-                    </form>
-                </div>
-
-            </section>
-            <!--END DESING-->
-
-            <!--FILL-->
-            <div>
-                rellena + icono + flecha
-                -formulario
+    <div class="mediaqueries">
+        <!--PREVIEW-->
+        <section class="preview">
+          <div>
+            <button class="preview--button">
+            <i class="far fa-trash-alt"></i> Reset
+          </button>
+          <div class="preview--card">
+            <div class="preview--card__info">
+              <div class="preview--edge"></div>
+              <div>
+                <h2>titulo</h2>
+                <h3>subtitulo</h3>
+              </div>
             </div>
-            <!--END FILL-->
+            <img src="./assets/images/foto-perfil.jpg" />
+            <div class="icons">
+              <div class="icons--border"><i class="fas fa-mobile-alt"></i></div>
+              <div class="icons--border"><i class="far fa-envelope"></i></div>
+              <div class="icons--border"><i class="fab fa-linkedin-in"></i></div>
+              <div class="icons--border"><i class="fab fa-github-alt"></i></div>
+            </div>
+          </div></div>
+        </section>
 
-            <!--SHARE-->
-            <section class="share wrapper">
+        <!--END PREVIEW-->
+        <!--FORM-->
+        <section class="mediaqueries-form">
+            <nav>
+                <!--DESING-->
+                <section class="design wrapper">
 
-                <div class="dropdown">
-                    <div class="dropdown__header">
-                        <i class="far fa-object-ungroup dropdown__ungroup"></i>
-                        <h2 class="dropdown__title">comparte</h2>
+                    <div class="dropdown">
+                        <div class="dropdown__header">
+                            <i class="far fa-object-ungroup dropdown__ungroup"></i>
+                            <h2 class="dropdown__title">diseña</h2>
+                        </div>
+                        <div><i class="fas fa-chevron-up"></i>
+                        </div>
                     </div>
-                    <div><i class="fas fa-chevron-up"></i>
+
+                    <div class="design-form">
+                        <h3 class="design-form__description">colores</h3>
+                        <form action="#" method="get" class="design-form__palette">
+
+                            <div class="design-form__palette--item">
+                                <input type="radio" id="palette1" value="palette1" name="palette" class="design-form__palette--radio"
+                                    checked><img src="./assets/images/palette1.png" class="design-form__palette--image"
+                                    alt="colour palette 1">
+                            </div>
+                            <div class="design-form__palette--item">
+                                <input type="radio" id="palette2" value="palette2" name="palette"
+                                    class="design-form__palette--radio"><img src="./assets/images/palette2.png"
+                                    class="design-form__palette--image" alt="colour palette 2">
+                            </div>
+                            <div class="design-form__palette--item">
+                                <input type="radio" id="palette3" value="palette3" name="palette"
+                                    class="design-form__palette--radio"><img src="./assets/images/palette3.png"
+                                    class="design-form__palette--image" alt="colour palette 3">
+                            </div>
+                        </form>
                     </div>
-                </div>
-
-                <div class="create">
-                    <button class="create__btn" name="create"><i class="far fa-address-card create__address"></i></i>crear
-                        tarjeta</button>
-                </div>
-
-
-                <section class="created">
-                    <h3 class="created__title">La tarjeta ha sido creada:</h3>
-                    <a href="#" class="created__url">https://awesome-profile-card.com?id=A456DF0001</a>
-                    <button class="created__btn"><a href="#" target="_blank" class="created__btn--text"><i
-                                class="fab fa-twitter created__btn--icon"></i>Compartir en Twitter</a></button>
 
                 </section>
-            </section>
-            <!--SHARE-->
+                <!--END DESING-->
 
-        </nav>
-    </section>
+                <!--FILL-->
+                <section>
 
-    <!--END FORM-->
+                    <div class="fill wrapper">
+
+                        <div class="fill__dropdown">
+                            <div class="fill__dropdown--icon"> <i class="far fa-keyboard"></i>
+                                <h2 class="fill__dropdown--title"> RELLENA</h2>
+                            </div>
+
+                            <div class="fill__dropdown--arrow "> <i class="fas fa-chevron-up"></i></div>
+                            <!-- 
+                            <div class="fill__dropdown--hidden"><i class="fas fa-chevron-down"></i></div>-->
+                        </div>
+
+
+
+
+                        <form class="fill__form" action="" method="post">
+
+                            <label class="style_label" for="name">Nombre completo</label>
+                            <input class="style_input" placeholder="Ej: Sally Jill" id="name" type="text" name="name" required>
+
+
+                            <label class="style_label" for="job">Puesto</label>
+                            <input class="style_input" placeholder="Ej: Front-end unicorn" id="job" type="text" name="job" required>
+
+
+                            <div class="fill__addPic">
+                                <h5 class="fill__addPic--title">Imagen de perfil </h5>
+
+                                <div class="fill__addPic--item">
+                                    <button class="fill__addPic--button"> Añadir imagen </button>
+                                    <div class="fill__addPic--pic"></div>
+                                </div>
+
+                            </div>
+
+
+                            <label class="style_label" for="email">Email</label>
+                            <input class="style_input" placeholder="Ej:sally-hill@gmail.com" id="email" type="email" name="email"
+                                required>
+
+
+                            <label class="style_label" for="phone">Teléfono </label>
+                            <input class="style_input" placeholder="Ej: 555-55-55-55" id="phone" type="tel" name="phone">
+
+                            <label class="style_label" for="linkedin">Linkedin</label>
+                            <input class="style_input" placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" type="text"
+                                name="linkedin" required>
+
+
+                            <label class="style_label" for="github">Github</label>
+                            <input class="style_input" placeholder="Ej: @sally-hill" id="github" type="text" name="github" required>
+
+
+
+
+
+                        </form>
+                    </div>
+                </section>
+                <!--END FILL-->
+
+                <!--SHARE-->
+                <section class="share wrapper">
+
+                    <div class="dropdown">
+                        <div class="dropdown__header">
+                            <i class="far fa-share-alt dropdown__ungroup"></i>
+                            <h2 class="dropdown__title">comparte</h2>
+                        </div>
+                        <div><i class="fas fa-chevron-up"></i>
+                        </div>
+                    </div>
+
+                    <section class="create">
+                        <button class="create__btn" name="create"><i class="far fa-address-card create__address"></i></i>crear
+                            tarjeta</button>
+
+                        <div class="created">
+                            <h3 class="created__title">La tarjeta ha sido creada:</h3>
+                            <a href="#" class="created__url">https://awesome-profile-card.com?id=A456DF0001</a>
+                            <button class="created__btn"><a href="#" target="_blank" class="created__btn--text"><i
+                                        class="fab fa-twitter created__btn--icon"></i>Compartir en Twitter</a></button>
+                        </div>
+                    </section>
+                </section>
+                <!--SHARE-->
+
+            </nav>
+        </section>
+        <!--END FORM-->
+    </div>
 
     <!--FOOTER-->
-    <footer>
-        copyright
-        logo adalab
+    <footer class="footer">
+        <small class="info-footer">awesom profile-cards @2018</small>
+        <img class="logo-adalab" src="../assets/images/logo-adalab.png" alt="logo-adalab">
     </footer>
 
     <!--END FOOTER-->
