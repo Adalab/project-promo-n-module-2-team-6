@@ -62,7 +62,7 @@
 .desing-icon {
   color: $orange;
 }
-.keyboard-icon {
+.fill-icon {
   color: $orange;
 }
 .share-icon {
@@ -75,6 +75,10 @@
   width: 50px;
   height: 22px;
   text-transform: capitalize;
+  margin-top: 5px;
+}
+.op-share {
+  margin-left: 18px;
 }
 .comenzar {
   border-radius: 21px;
