@@ -2,6 +2,7 @@
   background-color: #bfcdd0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   &--button{
     display: flex;
@@ -14,11 +15,10 @@
     font-size: 12px;
     text-transform: uppercase;
     background-color: #bfcdd0;
-    color:white;
+    color:#54585a;
     border: 1px solid white;
     border-radius: 15px;
 }
-  
   &--card {
     height: 329px;
     width: 240px;
@@ -31,28 +31,52 @@
     &__info{
       display: flex;
       flex-direction: row;
+      align-items: center;
+
+      margin-top: 23px;
     }
   }
     &--edge{
-     background-color: yellowgreen;
+     background-color: #438792;
         height: 42px;
         width: 5px;
     }
   
 }
+
+
+.name{color: #114e4e;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;}
+    
+  .proffesion{color: #54585a;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;}
+  
+  
 .icons{
   display: flex;
   flex-direction: row;
   margin-left: 20px;
   margin-bottom: 12px;
+  color:#114e4e;
   &--border{
     height: 32px;
     margin-right: 10px;
     width: 32px;
-    border:solid green;
+    border:solid #a2deaf;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+}
+.info{
+  margin-left: 10px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
