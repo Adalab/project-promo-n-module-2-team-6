@@ -3,6 +3,8 @@
   height: 110px;
   @include tablet {
     height: 60px;
+    display: flex;
+    flex-direction: row;
   }
 }
 .info-footer {
@@ -17,6 +19,11 @@
   margin-right: auto;
   text-align: center;
   margin-top: 18px;
+  @include tablet {
+    margin-left: 41px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 .logo-adalab {
   width: 103px;
@@ -25,4 +32,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
+  @include tablet {
+    margin-right: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
