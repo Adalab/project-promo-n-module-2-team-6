@@ -64,7 +64,7 @@ function handleLinkedin() {
    console.log(LinkedinPreviewEle.href = linkedinEle.value);
    linkedinPreviewEle.href = linkedinEle.value;
 }
-telEle.addEventListener('keyup', handleLinkedin);
+linkedinEle.addEventListener('keyup', handleLinkedin);
 
 //github 
 
@@ -75,4 +75,4 @@ function handleGithub() {
    console.log(githubeviewEle.href = githubEle.value);
    githubeviewEle.href = githubEle.value;
 }
-telEle.addEventListener('keyup', handleGithub);
+githubEle.addEventListener('keyup', handleGithub);
