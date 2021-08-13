@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
 .logo-awesome-main {
@@ -13,6 +13,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 95px;
+  @media all and (min-width: 768px) {
+    width: 419;
+    height: 105px;
+  }
 }
 .title-main {
   width: 223px;
@@ -24,6 +28,11 @@
   margin-top: 35.4px;
   color: $orange;
   font-family: $landingTitleF;
+  @media all and (min-width: 768px) {
+    width: 278px;
+    height: 31px;
+    font-size: 24px;
+  }
 }
 .subtitle-main {
   display: block;
@@ -36,6 +45,11 @@
   font-size: 12.8px;
   color: $darkGreen;
   font-family: $bodyF;
+  @media all and (min-width: 768px) {
+    width: 331px;
+    height: 48px;
+    font-size: 16px;
+  }
 }
 .options-main {
   width: 268px;
@@ -49,6 +63,11 @@
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @media all and (min-width: 768px) {
+    width: 325px;
+    height: 86px;
+    border-radius: 5px;
+  }
 }
 .options-kid {
   margin-left: auto;
@@ -77,6 +96,11 @@
   height: 22px;
   text-transform: capitalize;
   margin-top: 5px;
+  @media all and (min-width: 768px) {
+    width: 52px;
+    height: 22px;
+    font-size: 16px;
+  }
 }
 .op-share {
   margin-left: 18px;
@@ -92,6 +116,9 @@
   margin-right: auto;
   border: none;
   margin-bottom: 30px;
+  @media all and (min-width: 768px) {
+    margin-top: 196px;
+  }
 }
 .title-button {
   display: block;
