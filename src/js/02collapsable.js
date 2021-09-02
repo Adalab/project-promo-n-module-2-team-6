@@ -3,8 +3,11 @@
 const arrowButton = document.querySelector('.js-arrow');
 const chevronUp = document.querySelector('.js-chevron');
 const collapsableSection = document.querySelector('.js-collapsable');
+const container = document.querySelector('.container');
+
 
 function foldAndUnfold() {
+
     collapsableSection.classList.toggle('hidden');
 }
 
@@ -19,9 +22,13 @@ function changeArrow() {
     }
 }
 
-function handleCollapsable() {
+function handleCollapsable(event) {
+    console.log(event.target);
+    console.log(event.currentTarget);
     foldAndUnfold();
     changeArrow();
 }
 
-arrowButton.addEventListener('click', handleCollapsable);
+container.addEventListener('click', handleCollapsable);
+// arrowButton.addEventListener('click', handleCollapsable);
+// arrowButton2.addEventListener('click', handleCollapsable);

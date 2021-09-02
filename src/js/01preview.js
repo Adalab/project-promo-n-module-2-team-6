@@ -58,10 +58,10 @@ telEle.addEventListener('change', handleTel);
 
 
 const linkedinEle = document.querySelector('.js_linkedin');
-const linkedinPreviewEle = document.querySelector('.js_LinkedinPreview');
+const linkedinPreviewEle = document.querySelector('.js_linkedinPreview');
 
 function handleLinkedin() {
-  console.log(LinkedinPreviewEle.href = linkedinEle.value);
+  console.log(linkedinPreviewEle.href = linkedinEle.value);
   linkedinPreviewEle.href = linkedinEle.value;
 }
 linkedinEle.addEventListener('keyup', handleLinkedin);
