@@ -50,6 +50,9 @@
       color: white;
       background-color: $orange;
       border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &--pic {
       border: solid 1px $hospitalGreen;
@@ -76,8 +79,8 @@
 }
 
 .profile__preview {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin-left: 15px;
   background-position: center;
   background-repeat: no-repeat;
