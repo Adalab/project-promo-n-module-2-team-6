@@ -1,13 +1,13 @@
 // fonts
 
-$bodyF: 'Open Sans', sans-serif;
-$landingTitleF: 'Merriweather', serif;
-$cardF:  'Montserrat', sans-serif;
+$bodyF: "Open Sans", sans-serif;
+$landingTitleF: "Merriweather", serif;
+$cardF: "Montserrat", sans-serif;
 
 // colors
 $dirtyBlue: #438792;
 $gunMetal: #54585a;
-$darkGreen: #114e4e; 
+$darkGreen: #114e4e;
 $hospitalGreen: #a2deaf;
 $silver: #bfcdd0;
 $paleGrey: #dde9ed;
@@ -19,11 +19,9 @@ $whiteFour: #f5f5f5;
 $greyBorder: #d8d8d8;
 $greyCreate: #d5d5d5;
 
-
-
 // colour palette#a0c0cf
 $darkGreen: #114e4e;
-$dirtyBlue: #438792; 
+$dirtyBlue: #438792;
 $hospitalGreen: #a2deaf;
 
 $driedBlood: #420101;
@@ -34,11 +32,10 @@ $slate: #3e5b65;
 $fadedOrange: #eab052;
 $lightGrey: #a0c0cf;
 
-
-
 .hidden {
-    display: none;
+  display: none;
 }
 
-
-
+.upDown {
+  transform: rotate(180deg);
+}
