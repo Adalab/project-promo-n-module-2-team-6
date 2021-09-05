@@ -1,21 +1,19 @@
 'use strict';
 
-//DESIGN SECTION 
+//DESIGN SECTION
 
 //const arrowButton = document.querySelector('.js-arrow');
 const chevronUp = document.querySelector('.js-chevron');
 const collapsableSection = document.querySelector('.js-collapsable');
 const container = document.querySelector('.container');
 
-
-
 function foldAndUnfold(event) {
   event.preventDefault();
+  console.log(event.target);
+  console.log(event.currentTarget);
   collapsableSection.classList.toggle('hidden');
   chevronUp.classList.toggle('upDown');
 }
-
-
 
 /*function changeArrow() {
 
@@ -38,19 +36,16 @@ function foldAndUnfold(event) {
 }
 */
 
-
-container.addEventListener('click', foldAndUnfold);
+chevronUp.addEventListener('click', foldAndUnfold);
 // arrowButton.addEventListener('click', handleCollapsable);
 // arrowButton2.addEventListener('click', handleCollapsable);
 
-// FILL SECTION 
+// FILL SECTION
 
 //const arrowButton2 = document.querySelector('.js-arrow2');
 const chevronUp2 = document.querySelector('.js-chevron2');
 const collapsableSection2 = document.querySelector('.js-collapsable2');
 const container2 = document.querySelector('.container2');
-
-
 
 function foldAndUnfold2(event) {
   event.preventDefault();
@@ -58,4 +53,4 @@ function foldAndUnfold2(event) {
   chevronUp2.classList.toggle('upDown');
 }
 
-container2.addEventListener('click', foldAndUnfold2);
+chevronUp2.addEventListener('click', foldAndUnfold2);
