@@ -3,7 +3,8 @@ const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
-
+const defaultImg =
+	'https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE';
 /**
  * Recoge el archivo añadido al campo de tipo "file"
  * y lo carga en nuestro objeto FileReader para que
@@ -16,6 +17,7 @@ function getImage(e) {
 	const myFile = e.currentTarget.files[0];
 	fr.addEventListener('load', writeImage);
 	fr.readAsDataURL(myFile);
+	console.log(myFile);
 }
 
 /**
@@ -28,8 +30,19 @@ function writeImage() {
 	 * podemos pasarlo como background a la imagen de perfil y a la vista previa
 	 * de nuestro componente.
 	 */
-	profileImage.style.backgroundImage = `url(${fr.result})`;
-	profilePreview.style.backgroundImage = `url(${fr.result})`;
+	data.photo = fr.result;
+	console.log(fr.result);
+	console.log(data.photo);
+	previewImage();
+}
+
+function previewImage() {
+	if (data.photo === '') {
+		profileImage.style.backgroundImage = `url(${defaultImg})`;
+	} else {
+		profileImage.style.backgroundImage = `url(${data.photo})`;
+		profilePreview.style.backgroundImage = `url(${data.photo})`;
+	}
 }
 
 /**
