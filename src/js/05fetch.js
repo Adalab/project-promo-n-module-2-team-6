@@ -24,3 +24,27 @@ function handlerFormData(e) {
 }
 
 form.addEventListener('change', handlerFormData);
+
+const createBtn = document.querySelector('.js-createBtn');
+const cardResultElement = document.querySelector('.js-url');
+
+function handleCreateBtn(event) {
+	event.preventDefault();
+	console.log(data);
+
+	fetch('https://awesome-profile-cards.herokuapp.com/card', {
+		method: 'POST',
+		body: JSON.stringify(data),
+		headers: {
+			'Content-Type': 'application/json',
+		},
+	})
+		.then((response) => response.json())
+		.then((data) => {
+			console.log(data);
+			cardResultElement.innerHTML = data.cardURL;
+			console.log(cardResultElement);
+		});
+}
+
+createBtn.addEventListener('click', handleCreateBtn);
