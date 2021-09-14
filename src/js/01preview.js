@@ -1,18 +1,5 @@
 'use strict';
 
-const data = {
-	photo: '',
-	palette: '',
-	name: '',
-	job: '',
-	email: '',
-	phone: '',
-	linkedin: '',
-	github: '',
-};
-
-console.log(data);
-
 const nameEle = document.querySelector('.js_name');
 const previewNameEle = document.querySelector('.js_namePreview');
 //Name preview
@@ -22,8 +9,8 @@ function handleName() {
 	} else {
 		previewNameEle.innerHTML = nameEle.value;
 	}
-	data.name = nameEle.value;
-	console.log(nameEle.value);
+	// data.name = nameEle.value;
+	// console.log(nameEle.value);
 }
 
 nameEle.addEventListener('keyup', handleName);
@@ -37,8 +24,8 @@ function handleJob() {
 	} else {
 		previewJobEle.innerHTML = jobEle.value;
 	}
-	data.job = jobEle.value;
-	console.log(jobEle.value);
+	// data.job = jobEle.value;
+	// console.log(jobEle.value);
 }
 jobEle.addEventListener('keyup', handleJob);
 
@@ -49,7 +36,7 @@ const emailPreviewEle = document.querySelector('.js_emailPreview');
 
 function handleEmail() {
 	emailPreviewEle.href = 'mailto:' + emailEle.value;
-	data.email = emailEle.value;
+	// data.email = emailEle.value;
 }
 emailEle.addEventListener('change', handleEmail);
 
@@ -61,7 +48,7 @@ const telPreviewEle = document.querySelector('.js_telPreview');
 function handleTel() {
 	console.log((telPreviewEle.href = telEle.value));
 	telPreviewEle.href = telEle.value;
-	data.phone = telEle.value;
+	// data.phone = telEle.value;
 }
 telEle.addEventListener('change', handleTel);
 
@@ -75,7 +62,7 @@ const linkedinPreviewEle = document.querySelector('.js_linkedinPreview');
 function handleLinkedin() {
 	console.log((linkedinPreviewEle.href = linkedinEle.value));
 	linkedinPreviewEle.href = linkedinEle.value;
-	data.linkedin = linkedinEle.value;
+	// data.linkedin = linkedinEle.value;
 }
 linkedinEle.addEventListener('keyup', handleLinkedin);
 
@@ -87,7 +74,7 @@ const githubeviewEle = document.querySelector('.js_githubPreview');
 function handleGithub() {
 	console.log((githubeviewEle.href = githubEle.value));
 	githubeviewEle.href = githubEle.value;
-	data.github = githubEle.value;
+	// data.github = githubEle.value;
 }
 githubEle.addEventListener('keyup', handleGithub);
 
