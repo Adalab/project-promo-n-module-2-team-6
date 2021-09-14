@@ -44,6 +44,7 @@ function handleCreateBtn(event) {
 			console.log(data);
 			cardResultElement.innerHTML = data.cardURL;
 			console.log(cardResultElement);
+			console.log(data.cardURL);
 		});
 }
 
