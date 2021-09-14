@@ -1,11 +1,14 @@
 'use strict';
 
 // const data = {
-// 	palatte: 1,
+//	photo: '',
+// 	palette: 1,
 // 	name: '',
 // 	job: '',
-// 	...
-// 	photo: ''
+// 	email: '',
+// 	phone: '',
+//	linkedin: '',
+// github: '',
 // };
 
 const nameEle = document.querySelector('.js_name');
@@ -30,6 +33,7 @@ function handleJob() {
 	} else {
 		previewJobEle.innerHTML = jobEle.value;
 	}
+	// data.job = jobEle.value;
 }
 jobEle.addEventListener('keyup', handleJob);
 
@@ -41,6 +45,7 @@ const emailPreviewEle = document.querySelector('.js_emailPreview');
 function handleEmail() {
 	console.log((emailPreviewEle.href = emailEle.value));
 	emailPreviewEle.href = 'mailto:' + emailEle.value;
+	// data.email = emailEle.value;
 }
 emailEle.addEventListener('change', handleEmail);
 
@@ -52,6 +57,7 @@ const telPreviewEle = document.querySelector('.js_telPreview');
 function handleTel() {
 	console.log((telPreviewEle.href = telEle.value));
 	telPreviewEle.href = telEle.value;
+	// data.phone = telEle.value;
 }
 telEle.addEventListener('change', handleTel);
 
@@ -65,6 +71,7 @@ const linkedinPreviewEle = document.querySelector('.js_linkedinPreview');
 function handleLinkedin() {
 	console.log((linkedinPreviewEle.href = linkedinEle.value));
 	linkedinPreviewEle.href = linkedinEle.value;
+	// data.linkedin = linkedinEle.value;
 }
 linkedinEle.addEventListener('keyup', handleLinkedin);
 
@@ -76,6 +83,7 @@ const githubeviewEle = document.querySelector('.js_githubPreview');
 function handleGithub() {
 	console.log((githubeviewEle.href = githubEle.value));
 	githubeviewEle.href = githubEle.value;
+	// data.github = githubEle.value;
 }
 githubEle.addEventListener('keyup', handleGithub);
 
