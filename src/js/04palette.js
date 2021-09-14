@@ -8,15 +8,18 @@ const edgePreview = document.querySelector('.js-edge');
 function handleChangeColor(event) {
 	const inputId = event.target.id;
 
-	if (inputId === 'palette2') {
+	if (inputId === 'palette1') {
+		edgePreview.classList.remove('palette3');
+		edgePreview.classList.remove('palette2');
+		edgePreview.classList.add('palette1');
+	} else if (inputId === 'palette2') {
+		edgePreview.classList.remove('palette1');
 		edgePreview.classList.remove('palette3');
 		edgePreview.classList.add('palette2');
 	} else if (inputId === 'palette3') {
+		edgePreview.classList.remove('palette1');
 		edgePreview.classList.remove('palette2');
 		edgePreview.classList.add('palette3');
-	} else {
-		edgePreview.classList.remove('palette2');
-		edgePreview.classList.remove('palette3');
 	}
 }
 selectedColour.addEventListener('click', handleChangeColor);
