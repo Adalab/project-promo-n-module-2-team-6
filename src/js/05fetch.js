@@ -13,10 +13,10 @@ let data = {
 const form = document.querySelector('.js-form');
 
 function handlerFormData(e) {
-	console.log(e.target.id);
+	console.log(e.target.name);
 	console.log(e.currentTarget);
 
-	const inputId = e.target.id;
+	const inputId = e.target.name;
 	const inputValue = e.target.value;
 
 	data[inputId] = inputValue;
