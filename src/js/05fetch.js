@@ -43,6 +43,7 @@ function handleCreateBtn(event) {
 		.then((data) => {
 			console.log(data);
 			cardResultElement.innerHTML = data.cardURL;
+			cardResultElement.href = data.cardURL;
 			console.log(cardResultElement);
 			console.log(data.cardURL);
 		});
