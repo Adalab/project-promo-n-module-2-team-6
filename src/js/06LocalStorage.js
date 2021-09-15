@@ -14,8 +14,8 @@ function getLocalStorage() {
     if (getData !== null) {
         const arrList = JSON.parse(getData);
         data = arrList;
-        handlerFormData();
-        previewImage();
+        //  handlerFormData();
+        //previewImage();
 
     }
 }
