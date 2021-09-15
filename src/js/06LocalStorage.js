@@ -10,10 +10,13 @@ function setLocalStorage() {
 
 function getLocalStorage() {
     let getData = localStorage.getItem('data');
+
     if (getData !== null) {
         const arrList = JSON.parse(getLocalStorage);
         data = arrList;
         handlerFormData();
+        previewImage();
+
     }
 }
 getLocalStorage();

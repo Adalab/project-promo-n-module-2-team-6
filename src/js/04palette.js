@@ -21,5 +21,6 @@ function handleChangeColor(event) {
 		edgePreview.classList.remove('palette2');
 		edgePreview.classList.add('palette3');
 	}
+
 }
 selectedColour.addEventListener('click', handleChangeColor);

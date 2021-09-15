@@ -18,6 +18,7 @@ function getImage(e) {
 	fr.addEventListener('load', writeImage);
 	fr.readAsDataURL(myFile);
 	console.log(myFile);
+	setLocalStorage();
 }
 
 /**
@@ -43,6 +44,8 @@ function previewImage() {
 		profileImage.style.backgroundImage = `url(${data.photo})`;
 		profilePreview.style.backgroundImage = `url(${data.photo})`;
 	}
+	//setLocalStorage();
+
 }
 
 /**
