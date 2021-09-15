@@ -11,6 +11,7 @@ function handleName() {
 	}
 	// data.name = nameEle.value;
 	// console.log(nameEle.value);
+	getLocalStorage();
 }
 
 nameEle.addEventListener('keyup', handleName);
@@ -26,6 +27,7 @@ function handleJob() {
 	}
 	// data.job = jobEle.value;
 	// console.log(jobEle.value);
+	getLocalStorage();
 }
 jobEle.addEventListener('keyup', handleJob);
 
@@ -37,6 +39,7 @@ const emailPreviewEle = document.querySelector('.js_emailPreview');
 function handleEmail() {
 	emailPreviewEle.href = 'mailto:' + emailEle.value;
 	// data.email = emailEle.value;
+	getLocalStorage();
 }
 emailEle.addEventListener('change', handleEmail);
 
@@ -49,6 +52,7 @@ function handleTel() {
 	console.log((telPreviewEle.href = telEle.value));
 	telPreviewEle.href = telEle.value;
 	// data.phone = telEle.value;
+	getLocalStorage();
 }
 telEle.addEventListener('change', handleTel);
 
@@ -63,6 +67,7 @@ function handleLinkedin() {
 	console.log((linkedinPreviewEle.href = linkedinEle.value));
 	linkedinPreviewEle.href = linkedinEle.value;
 	// data.linkedin = linkedinEle.value;
+	getLocalStorage();
 }
 linkedinEle.addEventListener('keyup', handleLinkedin);
 
@@ -75,6 +80,7 @@ function handleGithub() {
 	console.log((githubeviewEle.href = githubEle.value));
 	githubeviewEle.href = githubEle.value;
 	// data.github = githubEle.value;
+	getLocalStorage();
 }
 githubEle.addEventListener('keyup', handleGithub);
 

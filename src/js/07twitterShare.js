@@ -12,10 +12,3 @@ function twitterShare() {
     twitterButton.addEventListener('click', twitterShare);
 }
 
-//////////////local storage 
-
-
-function setLocalStorage() {
-    const listArray = JSON.stringify(data);
-    localStorage.setItem('data', listArray);
-}
