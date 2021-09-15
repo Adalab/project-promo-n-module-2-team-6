@@ -43,6 +43,7 @@ function handleCreateBtn(event) {
 			if (data.success) {
 				cardCreated.classList.remove('hidden');
 			}
+			twitterShare();
 		});
 }
 
